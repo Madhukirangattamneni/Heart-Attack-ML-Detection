@@ -1,41 +1,68 @@
-# Heart-Attack-ML-Detection
-Machine learning project comparing multiple algorithms for heart attack prediction using a Kaggle dataset.
+#MACHINE LEARNING PROJECTS USING KAGGLE DATASETS
 
-# Heart attack prediction using machine learning
-## Overview
+This repository contains machine learning projects that explore how different algorithms perform on real-world datasets obtained from Kaggle. The purpose of these projects is to understand model behavior, compare algorithm performance, and evaluate results using common machine learning metrics such as accuracy, recall, and ROC-AUC score.
 
-This project explores how different machine learning algorithms perform when predicting the risk of heart attacks using a healthcare dataset. The main goal was to compare several models and understand which one works better for this type of medical prediction problem.
+These projects were implemented using Python and popular data science libraries including pandas, numpy, scikit-learn, and matplotlib.
 
-## Dataset
+---
 
-The dataset used in this project was taken from Kaggle and contains around 445,000 patient records. It includes information related to lifestyle, medical history, and demographic details such as smoking habits, physical activity, BMI, existing health conditions, and other indicators that may influence heart disease.
+## PROJECT 1: HEART ATTACK RISK PREDICTION USING MULTIPLE MACHINE LEARNING ALGORITHMS AND COMPARING THEM
 
-Before training the models, the dataset was cleaned and prepared. Missing values were handled, categorical variables were converted into numerical form, and the features were scaled so the algorithms could process the data properly.
+This project focuses on predicting the risk of heart attacks using a healthcare dataset. Several machine learning algorithms were applied to the dataset and their performance was compared to determine which model works best for this type of medical prediction problem.
 
-## Models used
+The dataset was first cleaned by handling missing values and encoding categorical features. Numerical features were scaled before training the models. After preprocessing, multiple algorithms were trained and evaluated.
 
-Multiple machine learning algorithms were tested in this project, including Logistic Regression, KNN, Decision Tree, Random Forest, and Support Vector Machine.
+The algorithms used in this project include:
 
-Each model was trained on the dataset and evaluated to see how well it could detect patients who might have a risk of heart attack.
+* Logistic Regression
+* K-Nearest Neighbors (KNN)
+* Decision Tree
+* Random Forest
+* Support Vector Machine (SVM)
 
-## Evaluation
+Each model was evaluated using accuracy, recall, and ROC-AUC score. A comparison table and visualizations were created to analyze how the models performed relative to each other. A weighted scoring system was also used to rank the models and identify the best performing algorithm.
 
-The models were compared using accuracy, recall, and ROC-AUC score. While accuracy shows overall performance, recall was especially important because the objective is to correctly identify people who actually have a heart attack risk.
 
-ROC-AUC score was also used to understand how well the models separate positive and negative cases.
+## PROJECT 2: APPLYING LOGISTIC REGRESSION ON MULTIPLE KAGGLE DATASETS
 
-## Observations
+The goal of this project was to study how a single machine learning algorithm performs across datasets with different characteristics.
 
-Some models showed very high accuracy but failed to correctly detect heart attack cases. For example, KNN and Random Forest performed well in terms of accuracy but had low recall, meaning many positive cases were missed.
+Logistic Regression was applied to multiple Kaggle datasets including:
 
-Logistic Regression and SVM performed more consistently and showed a better balance between recall and ROC-AUC score.
+* Telco Customer Churn Dataset
+* Adult Income Dataset
+* Wine Quality Dataset
 
-## Conclusion
+Each dataset went through preprocessing steps such as:
 
-This experiment shows that the model with the highest accuracy is not always the best choice, especially for healthcare problems where correctly identifying risky cases is more important.
+* Handling missing values
+* Encoding categorical variables
+* Feature scaling using StandardScaler
+* Splitting data into training and testing sets
 
-Based on the results, Logistic Regression and SVM appeared to be the most reliable models for predicting heart attack risk in this dataset.
+The Logistic Regression model was then trained on each dataset and evaluated using accuracy, recall, and ROC-AUC score. The results were compared in a final performance table, and visualizations were created to observe how the model behaves across different datasets.
 
-## Author
+A weighted ranking method was used to determine which dataset produced the best performance for Logistic Regression.
+
+
+## TOOLS AND LIBRARIES USED:
+
+The projects were implemented using Python and the following libraries:
+
+* pandas
+* numpy
+* scikit-learn
+* matplotlib
+
+These tools were used for data preprocessing, model training, evaluation, and visualization.
+
+## DATASET SOURCES
+
+All datasets used in these projects were obtained from Kaggle.
+
+Example datasets used include healthcare prediction datasets, customer churn datasets, income classification datasets, and wine quality datasets.
+
+
+## AUTHOR
 
 Madhu Kiran Gattamneni
